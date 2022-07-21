@@ -27,3 +27,19 @@ High: The highest price at which the stock traded during a period.
 Low: The lowest price at which the stock traded during a period. 
 
 Close: The price that determines how a stock performed during a period.
+
+# Approach:
+As a first step, the data as loaded the data and mounted the drive. After mounting the drive, important libraries such as numpy, pandas, seaborn, matplotlib and also all regressions model libraries with their metrics were imported, which are useful for our analysis.
+
+Exploration our data was performed by checking all the necessary parameters like shape, head, tail, information of the columns and their datatypes and description of data like mean, min and max. Exploratory data analysis, normalization, lag creation, preparation of the data and two types of splits were performed.
+
+Fundamental Analysis involves analyzing the company’s future profitability on the basis of its current business environment and financial performance. Technical Analysis, on the other hand, includes reading the charts and using statistical figures to identify the trends in the stock market.The will be on the technical analysis part.
+
+# Result:
+In this work we use linear regression technique, lasso regression, ridge regression, elastic net regression and XGBoost Regression technique. These five models gives us the following results-
+
+a)-Linear, lasso and ridge regression show almost same R squared values.
+
+b)-Independent variables ( High, Low and Open ) are directly correlated with Dependent variable ( Closing Price )
+
+c)-Xgboost regression results as best model for yes bank stock closing price data with very less mean square error i.e. 0.0016
